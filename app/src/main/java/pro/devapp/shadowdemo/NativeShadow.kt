@@ -29,6 +29,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
 import com.godaddy.android.colorpicker.harmony.ColorHarmonyMode
 import com.godaddy.android.colorpicker.harmony.HarmonyColorPicker
@@ -61,7 +62,8 @@ fun NativeShadow() {
 
             Text(
                 text = "Native shadow",
-                color = Color.Black
+                color = Color.Black,
+                modifier = Modifier.testTag("NativeShadowScreen")
             )
 
             Box(
